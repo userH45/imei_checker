@@ -1,0 +1,4 @@
+
+require 'Mechanize'
+require 'nokogiri'
+
