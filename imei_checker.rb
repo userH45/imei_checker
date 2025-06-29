@@ -2,6 +2,7 @@
 
 require_relative 'docomo_checker'
 require_relative 'kddi_checker'
+require_relative 'softbank_checker'
 #同じディレクトリのどこもチェックするメソッドの読み込み
 
 puts "IMEIを入力してください"
@@ -17,6 +18,9 @@ puts "ドコモの判定結果: #{result_docomo}"
 
 result_kddi = check_kddi(imei)
 puts "KDDIの判定結果: #{result_kddi}"
+
+result_softbank = check_softbank(imei)
+puts "ソフトバンクの判定結果: #{result_softbank}"
 
 # result_softbank = check_softbank(imei)
 # puts "ソフトバンクの判定結果: #{result_softbank}"
